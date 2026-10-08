@@ -37,7 +37,7 @@ export default function DashboardTempPage() {
           }),
           value: item.value,
         }));
-        setReadings(formatted);
+        setReadings(formatted.reverse());
       } catch (error) {
         console.error("Fetching data:", error);
       } finally {
